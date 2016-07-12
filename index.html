@@ -14,9 +14,20 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet">
-
+    <link href="css/lightslider.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/loginModal.css" rel="stylesheet">
+    
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -41,113 +52,516 @@
 
 </head>
 
-<body>
+<body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top customNav">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Care for Our Common Home</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Care for Our Common Home</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="500" href="#">About
-                            <span class="caret"></span></a>
+                        <a class="page-scroll dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true" href="#about">About CCH <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Option 1</a></li>
-                            <li><a href="">Option 2</a></li>
+                            <li><a href="#about">Mission Statement</a></li>
+                            <li><a href="#about">History</a></li>
+                            <li><a href="#about">Accomplishments</a></li>
+                            <li><a href="#about">Contact</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="#">Services</a>
+                    <li class="dropdown">
+                        <a class="page-scroll dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true" href="#IOT">Areas of Interest <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#IOT">Worship</a></li>
+                            <li><a href="#IOT">Prayers</a></li>
+                            <li><a href="#IOT">Meditations</a></li>
+                            <li><a href="#IOT">Special Days</a></li>
+                            <li><a href="#IOT">Sacred Space</a></li>
+                            <li><a href="#IOT">Education</a></li>
+                            <li><a href="#IOT">Sustainability</a></li>
+                            <li><a href="#IOT">Advocacy</a></li>
+                        </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="#">Contact</a>
+                    <li>
+                        <a class="page-scroll" href="#calendar">Events</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#blog">Community Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
     <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <header id="front-page" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#front-page" data-slide-to="0" class="active"></li>
+            <li data-target="#front-page" data-slide-to="1"></li>
+            <li data-target="#front-page" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                <div class="fill" style="background-image:url('img/front-page/francis1.jpg')"></div>                
+                <div id="welcomeHeader" class="header-text headerText">
+                    <h2>Welcome to Care for Our Common Home!</h2>
+                </div>
+                <div class="carousel-caption tinted rounded_edges">
+                    <h5>"Once we start to think about the kind of world we are leaving to future generations, we look at things differently; we realize that the world is a gift which we have freely received and must share with others… the world we have received also belongs to those who will follow us. (no. 159)"</h5>
+                    <button class="btn btn-primary btn-sm">Learn More</button>
+                    <br>
+                    <br>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-                <div class="carousel-caption">
+                <div class="fill" style="background-image:url('img/front-page/francis.jpg');"></div>
+                <div class="carousel-caption tinted rounded_edges">
                     <h2>Caption 2</h2>
+                    <button class="btn btn-primary btn-sm">Learn More</button>
+                    <br>
+                    <br>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                <div class="carousel-caption">
+                <div class="fill" style="background-image:url('img/front-page/sjn.jpg');"></div>
+                <div class="carousel-caption tinted rounded_edges">
                     <h2>Caption 3</h2>
+                    <button class="btn btn-primary btn-sm">Learn More</button>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#front-page" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#front-page" data-slide="next">
             <span class="icon-next"></span>
         </a>
 
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Half Slider by Start Bootstrap</h1>
-                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>half-slider.css</code>file.</p>
-            </div>
+    <section id="about">
+        <div class="text-center">
+            <h1 class="headerText">About CCH</h1>            
         </div>
-
+        <br>
+        <br>
+        <div class="col-md-1"></div>
+        <div class="col-md-2" id="aboutNav">        
+            <h4>About CCH</h4>            
+            <ul>
+                <li><a href="#about" onclick="changeAbout(1)">Mission Statement</a></li>
+                <li><a href="#about" onclick="changeAbout(2)">History</a></li>
+                <li><a href="#about" onclick="changeAbout(3)">Accomplishments</a></li>
+                <li><a href="#about" onclick="changeAbout(4)">Contact</a></li>                
+            </ul>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7 text-center" id="aboutSection">
+            <div id="firstInfoSection" class="active aboutSectionBlock rounded_edges">
+                <h4>Mission Statement</h4>
+                <p>Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here</p>
+            </div>
+            <div id="secondInfoSection" class="hidden aboutSectionBlock rounded_edges">
+                <h4>History</h4>
+                <p>Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here</p>
+            </div>
+            <div id="thirdInfoSection" class="hidden aboutSectionBlock rounded_edges">
+                <h4>Accomplishments</h4>
+                <p>Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here</p>
+            </div>
+            <div id="fourthInfoSection" class="hidden aboutSectionBlock rounded_edges">
+                <h4>Contact</h4>
+                <p>Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here</p>
+            </div>
+            <div id="fifthInfoSection" class="hidden aboutSectionBlock">
+                <h4>First Header</h4>
+                <p>Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here 
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here
+                Let's put some text here</p>
+            </div>        
+        </div>
+        <div class="col-md-1"></div>
+    </section>
+    
+    <section id="IOT" class="text-center">     
+        <div class="col-md-12 sectionHeader">
+            <h2>Items of Interest</h2>
+        </div>        
         <hr>
-
-        <!-- Footer -->
-        <footer>
+        <div class="col-md-2 iotBlocks"></div>
+        <div class="col-md-8 text-center iotBlocks">
+            <ul id="itemsOfInterest" class="content-slider">
+                <li>
+                    <h3>First Block</h3>
+                    <p>First block is here</p>
+                </li>
+                <li>
+                    <h3>Second Block</h3>
+                    <p>Second block is here</p>
+                </li>
+                <li>
+                    <h3>Third Block</h3>
+                    <p>Third block is here</p>
+                </li>
+                <li>
+                    <h3>Third Block</h3>
+                    <p>Third block is here</p>
+                </li>
+                <li>
+                    <h3>Third Block</h3>
+                    <p>Third block is here</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 iotBlocks"></div>
+    </section>
+    
+    <!-- Google Calendar Section -->
+    <section id="calendar" class="bg-light-gray">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Check out our Google Calendar!</h2>
+                    <h3 class="section-subheading text-muted">We will post our meetings and other sponsored events here. Check here daily to see our most recently updated calendar.</h3>
+                </div>
+            </div>            
+            <div class="text-center">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mzack5020%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted"></p>
                 </div>
             </div>
-            <!-- /.row -->
-        </footer>
-
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Community Blog &amp; Facebook</h2>
+                    <h3 class="section-subheading text-muted">Login or create an account and share your daily green choice or promote others! Check out our facebook feed on the right as well!<br><br>
+                        <div class="row section-subheading" id="loginRequired">
+                            <h4>You must <strong>login</strong> before posting/commenting!</h4>
+                            <div class="col-md-6"><button class="btn btn-primary btn-md" type="button" data-toggle="modal" data-target="#login-modal">Login</button></div>
+                            <div class="col-md-6"><button class="btn btn-info btn-md" type="button" data-toggle="modal" data-target="#create-modal">Create Account</button></div>
+                        </div> 
+                        <div id="logoutButtonSection" class="text-center" style="display:none">
+                            <button class="btn btn-primary btn-md" type="button" data-toggle="modal" data-target="#create-post">Create Post!</button>
+                            <button class="btn btn-danger btn-md" onclick="logout()">Logout</button>
+                        </div>
+                    </h3>                                                           
+                </div>
+            </div>
+            <div class="row">  
+                <div class="col-lg-8 blogSection">
+                    <div id="blogs" class="loginCover">
+                        <div id="blogTemplate">
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>   
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle"></div>
+                                    <div class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <p></p>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div id="dbBlog"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fbSection">
+                    <div class="container">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCareForOurCommonHomeSJN%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                width="340" height="500" style="border:none;overflow:hidden;" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <span class="copyright">Developed for Care for Our Common Home</span>
+                    </div>
+                    <div class="row">
+                        <span class="copyright">By: <a href="http://personal.psu.edu/mgz5020">Matthew Zackschewski</a></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#page-top"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/CareForOurCommonHomeSJN/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                    <span class="copyright">Copyright &copy; <a href="http://www.personal.psu.edu/mgz5020">Care for Our Common Home</a> 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="http://www.saintjn.org">St. John Neumann Catholic Parish</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Login Modal -->
+    
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Login</h1><br>                
+                <input type="text" name="user" placeholder="Username" id="username">
+                <input type="password" name="pass" placeholder="Password" id="password">
+                <button type="submit" class="btn btn-primary btn-md btn-block" onclick="login()" data-dismiss="modal">Login</button>
+            </div>
+        </div>
     </div>
-    <!-- /.container -->
+    
+    <!-- /Login Modal -->
+    
+    <!-- Create Account Modal -->
+    
+    <div class="modal fade" id="create-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1>Create Account</h1><br>
+                <input type="text" name="fn" placeholder="First Name" id="fn">
+                <input type="text" name="sn" placeholder="Last Name" id="ln">
+                <input type="text" name="email" placeholder="Email (also your account username)" id="createEmail">
+                <input type="password" name="pw" placeholder="Password" id="pw">
+                <input type="submit" name="login" class="btn btn-primary btn-md" value="Create" onclick="register()">
+                <button type="button" class="btn btn-danger btn-md btn-block" data-dismiss="modal" style="font-family:roboto;">Cancel</button>
+				
+				<!--<div class="login-help">
+				    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+				</div>-->
+            </div>
+        </div>
+    </div>
+    
+    <!-- /Create Login Modal -->
+    
+    <!-- New Comment Modal -->
+    
+    <div class="portfolio-modal modal fade" id="create-post" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Create a Comment</h2>
+                            <p class="item-intro text-muted">Share your opinion on today's <font color="1AFF66">green</font> topics.</p>
+                            <!-- Portfolio Grid Section -->
+                            <!--<div id="comment">
+                                <div class="comment-item text-center">
+                                    <a class="comment-link">
+                                        <div class="comment-hover">
+                                            <div class="comment-hover-content">
+                                                <i class="fa fa-plus fa-3x"></i>
+                                                <h4>Add Photo</h4>
+                                            </div>
+                                        </div>
+                                        <img src="img/logo_portfolio.png" class="img-responsive portfolioPhoto" alt="">
+                                    </a>
+                                    <div class="comment-caption">
+                                        <textarea rows="5" cols="80"></textarea>
+                                    </div>
+                                </div>                            
+                            </div>-->
+                            
+                            <div class="blogPost">
+                                <div class="blogHeader">
+                                    <div class="blogTitle">
+                                        <input type="text" id="new_comment_title" placeholder="Blog Title" onkeyup="checkParameters()"/>
+                                    </div>
+                                    <div id="new_comment_user" class="blogUser"></div>
+                                </div>
+                                <div class="blogDescription">
+                                    <input type="text" id="new_comment_description" placeholder="Body" onkeyup="checkParameters()"/>
+                                </div>                            
+                            </div>
+                            <br>
+                            <button id="postButton" type="button" disabled class="btn btn-primary" onclick="postComment()"><i class="fa fa-check"></i> Submit</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /New Comment Modal -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -155,19 +569,25 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     
+    <!-- Backendless JavaScript -->
+    <script src="http://api.backendless.com/sdk/js/latest/backendless.js"></script>
+    
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
     
     <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    
+    <script src="js/carousel.js"></script>
+    
+    <script src="js/lightslider.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    <script src="js/agency.js"></script>
+    
+    <script src="js/about.js"></script>
+    
+    <script src="js/blog.js"></script>
 
 </body>
 
